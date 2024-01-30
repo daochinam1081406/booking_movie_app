@@ -34,9 +34,6 @@ export default function DetailMovie() {
   return (
     <div id="showtimes" className="listMovie relative overflow-x-hidden">
       <div>
-        <p className="text-orange-400 text-center text-4xl font-bold ">
-          Top movies in theatres
-        </p>
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
