@@ -8,7 +8,6 @@ export default function Header() {
   const { info } = useSelector((state) => state.userReducer);
 
   let navigate = useNavigate();
-  const isAdmin = info && info.maLoaiNguoiDung === "QuanTri";
   let handleLogOut = () => {
     localService.remove();
   };
