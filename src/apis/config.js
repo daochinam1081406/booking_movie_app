@@ -28,7 +28,6 @@ export const https = axios.create({
 https.interceptors.request.use(
   function (config) {
     store.dispatch(handleLoadingOn());
-    // console.log("api đi");
     return config;
   },
   function (error) {
@@ -40,7 +39,6 @@ https.interceptors.request.use(
 https.interceptors.response.use(
   function (response) {
     store.dispatch(handleLoadingOff());
-    // console.log("api về");
     return response;
   },
   function (error) {

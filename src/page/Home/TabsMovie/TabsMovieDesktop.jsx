@@ -12,10 +12,7 @@ import {
 
 export default function TabsMovieDesktop() {
   const [danhSachHeThongRap, setDanhSachHeThongRap] = useState([]);
-  console.log(
-    "😐 ~ TabsMovieDesktop ~ danhSachHeThongRap:👉",
-    danhSachHeThongRap
-  );
+
   let dispatch = useDispatch();
   const { info } = useSelector((state) => state.userReducer);
   useEffect(() => {
